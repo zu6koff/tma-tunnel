@@ -1,4 +1,10 @@
 # TMA Tunnel
+A utility that allows you to make a server on your local computer public uses [ngrok](https://ngrok.com/docs/getting-started/). The created address will be automatically inserted into the menu button of your telegram bot. Once the tunnel is stopped, the default button will be returned.
+
+## Install
+```shell
+npm install tma-tunnel -g
+```
 
 ## Usage
 
@@ -7,9 +13,9 @@ First of all, it is assumed that you have already installed [ngrok](https://ngro
 ### 1. Configuration file
 Create a `tma-tunnel.config.json` file in the root of the project. Specify the following parameters in it:
 #### `botToken`
-Token from the bot settings is required to work with the API. Required field
+Token from the bot settings is required to work with the API. Required field.
 #### `userIds`
-An array of user ids who need to change the link in the menu button. Required field
+An array of user ids who need to change the link in the menu button. Required field.
 
 Example file:
 ```json
@@ -23,4 +29,8 @@ Example file:
 Run your project and make a call in the project console:
 ```shell
 tma-tunnel --port=5172
+```
+Or if the dependency is installed locally:
+```shell
+npx tma-tunnel --port=5172
 ```
