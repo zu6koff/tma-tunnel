@@ -1,11 +1,12 @@
 # TMA Tunnel
 A utility that allows you to make a server on your local computer public uses [ngrok](https://ngrok.com/docs/getting-started/). The created address will be automatically inserted into the menu button of your telegram bot. Once the tunnel is stopped, the default button will be returned.
-
+\
+\
+![alt text](https://www.dropbox.com/scl/fi/6ofc8r431t1szcoaqn1l8/.png?rlkey=bplcvv9eeojy4lizqk8atmhub&raw=1)
 ## Install
 ```shell
 npm install tma-tunnel -g
 ```
-
 ## Usage
 
 First of all, it is assumed that you have already installed [ngrok](https://ngrok.com/docs/getting-started/) on your device.
@@ -24,7 +25,6 @@ Example file:
   "userIds": [12345, 23456]
 }
 ```
-
 ### 2. Launch
 Run your project and make a call in the project console:
 ```shell
@@ -34,3 +34,11 @@ Or if the dependency is installed locally:
 ```shell
 npx tma-tunnel --port=5172
 ```
+
+---
+\
+Order the development of TMA or TON projects:
+
+* tg: [t.me/tgappsman](t.me/tgappsman)
+* vk: [vk.com/dev_juice](vk.com/dev_juice)
+* website: [juicedev.org](juicedev.org)
