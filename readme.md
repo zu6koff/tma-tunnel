@@ -2,7 +2,7 @@
 A utility that allows you to make a server on your local computer public uses [ngrok](https://ngrok.com/docs/getting-started/). The created address will be automatically inserted into the menu button of your telegram bot. Once the tunnel is stopped, the default button will be returned.
 \
 \
-![alt text](https://www.dropbox.com/scl/fi/6ofc8r431t1szcoaqn1l8/.png?rlkey=bplcvv9eeojy4lizqk8atmhub&raw=1)
+![image.png](https://i.postimg.cc/mgpgHpYv/min.png)
 ## Install
 ```shell
 npm install tma-tunnel -g
