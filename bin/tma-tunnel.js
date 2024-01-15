@@ -65,7 +65,19 @@ async function run() {
       url,
       type: 'web_app',
       text: 'Start (dev)'
-    }).catch((err) => handleBotApiError(err)));
+    }).catch((err) => {
+      const errorMessage = {
+        400: `The user ${userIds[i]} can not be found or the user has not opened a dialogue with the bot yet`,
+      }[err.response.data.error_code];
+
+      if (errorMessage) {
+        console.error(errorMessage);
+        process.exit(1);
+        return;
+      }
+
+      handleBotApiError(err)
+    }));
   }
 
   await Promise.all(promises);
